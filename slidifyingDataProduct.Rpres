@@ -1,0 +1,45 @@
+slidifying Data Product
+========================================================
+author: chhavi agrawal
+date: 08/14/2015
+
+
+========================================================
+
+##Description
+
+The Shiny App I wrote displays energy consumption information:
+
+. gas
+
+. electricity
+
+. water
+
+for the years 2012 to 2014.
+
+========================================================
+##Details
+
+These data are diffed, week by week, so that I get the week's consumption.
+
+Further more, a formula is applied to compute an estimate price (expressed in EUR) for the week's consumption.
+
+========================================================
+
+##Example
+
+Here are the first 5 lines of the Excel file (for the columns which interest me, the ones I show in the barplot):
+
+
+```{r}
+data <- read.csv("consumption.csv", sep=",", header=T)
+
+subset(data,select=c(Date,PriceGas,PriceElec,PriceWater))[1:5, ]
+```
+
+========================================================
+
+##Conclusion:-
+
+data visualization is very important part of data analysis ,shiny is amazing R package ,  enables R programmer to create interactive web application and moreover capability to share with technical and non technical audience.
